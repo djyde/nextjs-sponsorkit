@@ -70,7 +70,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     const sponsors = await fetchSponsors(config.token, config.login)
     await resolveAvatars(sponsors)
-    console.log(sponsors)
 
     const composer = new SvgComposer(await loadConfig(config))
     await defaultComposer(composer, sponsors, config)
