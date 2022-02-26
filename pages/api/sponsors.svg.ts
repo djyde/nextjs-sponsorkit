@@ -76,6 +76,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     const svg = composer.generateSvg()
 
+    res.statusCode = 200
     res.setHeader("Content-Type", "image/svg+xml");
     res.end(svg)
   }
