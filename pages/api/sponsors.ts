@@ -78,6 +78,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     res.statusCode = 200
     res.setHeader("Content-Type", "image/svg+xml");
+    // cache for a day
+    res.setHeader("Cache-Control", `public, max-age=${60 * 60 * 24}`);
     res.end(svg)
   }
 }
