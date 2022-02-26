@@ -63,9 +63,9 @@ async function defaultComposer(
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === 'GET') {
     const config = {
-      login: process.env.LOGIN,
+      login: process.env.LOGIN || process.env.VERCEL_GIT_REPO_OWNER,
       token: process.env.TOKEN,
-      tiers: defaultTiers
+      tiers: defaultTiers,
     } as SponsorkitConfig;
 
     const sponsors = await fetchSponsors(config.token, config.login)
