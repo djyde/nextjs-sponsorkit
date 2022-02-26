@@ -10,5 +10,5 @@ You can get an svg from `https://your-project.vercel.app/sponsors.svg`
 
 # Sponsors
 
-![](https://randysponsors.vercel.app)
+![](https://randysponsors.vercel.app/sponsors.svg)
 
