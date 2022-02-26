@@ -8,3 +8,7 @@ Use [Sponsorkit](https://github.com/antfu/sponsorkit) as a service.
 
 You will get an svg from `https://your-project.vercel.app`
 
+# Sponsors
+
+![]((https://randysponsors.vercel.app)
+
